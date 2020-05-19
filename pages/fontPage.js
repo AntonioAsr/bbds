@@ -22,13 +22,14 @@ export default function FontPage() {
                     {
                         typographyColors.map((textType, index) => {
                             return (
-                                <Col key={index} xs={4} style={{ marginTop: "30px" }}>
+                                <Col key={index} xs={12} sm={6} md={3} style={{ marginTop: "30px" }}>
                                     {
                                         allFonts.map((font, index) => {
                                             const color = COLORS[textType]
+                                            console.log(color)
                                             return (
                                                 <div key={index} style={{ alignItems: "center" }}>
-                                                    <Text fontType={`${font}`} color={color}>{`${font} ${textType}`}</Text>
+                                                    <Text fontType={`${font}`} color={color}>{`${font.toUpperCase()} ${font}`}</Text>
                                                 </div>
                                             )
                                         })

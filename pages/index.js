@@ -29,13 +29,30 @@ export default function Home() {
           height: 100%;
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          background-color: lightgrey;
         }
-
         * {
           box-sizing: border-box;
+        }
+        @font-face {
+          font-family: Swiss721BT-BoldCondensed;
+          src: url('/fonts/Swiss721BT-BoldCondensed.otf');
+        }
+        @font-face {
+          font-family: ProximaNova-Bold;
+          src: url('/fonts/proximanova-bold.otf');
+        }
+        @font-face {
+          font-family: ProximaNova-Semibold;
+          src: url('/fonts/ProximaNova-Semibold.ttf');
+        }
+        @font-face {
+          font-family: ProximaNova-Regular;
+          src: url('/fonts/ProximaNova-Regular.ttf');
+        }
+        @font-face {
+          font-family: ProximaNova-Light;
+          src: url('/fonts/ProximaNova-Light.ttf');
         }
       `}</style>
     </>
